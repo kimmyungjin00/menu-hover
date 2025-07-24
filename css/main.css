@@ -1,0 +1,61 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+nav {
+  position: relative;
+  width: 1000px;
+  height: 100px;
+  background-color: palegoldenrod;
+}
+.depth2 > li > a {
+  line-height: 50px;
+  color: #eb7221;
+  display: block;
+}
+.depth2 {
+  display: none;
+}
+.gnb {
+  position: absolute;
+  display: flex;
+  top: 50px;
+  right: 20px;
+  background-color: palegreen;
+  width: 600px;
+  text-align: center;
+}
+.gnb > li {
+  width: calc(100% / 4);
+  background-color: paleturquoise;
+  height: 50px;
+}
+.gnb > li > a {
+  line-height: 50px;
+
+  display: block;
+  color: rgb(255, 147, 6);
+  background-color: red;
+}
+/* 서브메뉴 전체나오기*/
+.gnb:hover .depth2 {
+  display: block;
+}
+.gnb > li:hover > a {
+  background-color: rgb(129, 182, 145);
+  color: azure;
+}
+.depth2 > li:hover > a {
+  background-color: pink;
+  color: #eb7221;
+}
